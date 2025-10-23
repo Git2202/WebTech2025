@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<style>
+body{
+font-family:Aerial,sans-serif;
+background-color:#f4f4f4;
+margin:20px;
+}
+h1{
+text-align:center;
+color:#333;
+font-size:32px;
+margin-bottom:20px;
+}
+table{
+width:60%;
+margin: 0 auto;
+background-color:#ff;
+border-collapse:collapse;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+td{
+padding:15px;
+font-size:18px;
+color:#555;
+}
+th{
+text-align:left;
+padding:15px;
+background-color:#4CAF50;
+color:white;
+font-size:20px;
+}
+input[type="text"],input[type="email"],input[type="password"],select,textarea{
+width:100%;
+padding:10px;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+input[type="submit"],input[type="reset"]{
+background-color:#4CAF50;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:4px;
+cursor:pointer;
+font-size:18px;
+}
+input[type="submit"]:hover{
+background-color:#4CAF50;
+}
+input[type="reset"]:hover{
+background-color:#4CAF50;
+}
+
+textarea{
+resize:vertical;
+height:100px;
+}
+.radio, .checkbox{
+width:auto;
+}
+</style>
+</head>
+<body>
+<h1>SMVITM Varnotsava Registration</h1>
+<form action="#" method="post">
+<table>
+<tr>
+<th colspan="2">Personal Info</th>
+</tr>
+<tr>
+<td>First Name</td>
+<td><input type="text" name="firstname" placeholder="Enter your first name"></td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="lasttname" placeholder="Enter your last name"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="email" name="email" placeholder="Enter your email"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" name="password" placeholder="Enter your password "></td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td>
+<input type="radio" name="gender" value="male" class="radio">Male
+<input type="radio" name="gender" value="female" class="radio">Female
+</td>
+</tr>
+<tr>
+<td>State</td>
+<td>
+<select name="State">
+<option value="ud">Udupi</option>
+<option value="dk">Dakshin Kannada</option>
+<option value="ben">Bengaluru</option>
+<option value="my">Mysore</option>
+<option value="sh">Shivamogga</option>
+</td>
+</tr>
+<tr>
+<tr>
+<td>Department</td>
+<td>
+<select name="Department">
+<option value="cse">CSE</option>
+<option value="ece">ECE</option>
+<option value="ds">AI-DS</option>
+<option value="ml">AI-ML</option>
+<option value="cm">Civil/Mechanical</option>
+</td>
+</tr>
+<tr>
+<td>Technical Events</td>
+<td>
+<input type="checkbox" name="tech" value="hackhunt" class="checkbox">Hackhunt<br>
+<input type="checkbox" name="tech" value="hackathon" class="checkbox">Hackathon<br>
+<input type="checkbox" name="tech" value="linefollower" class="checkbox">Line-Follower<br>
+</td>
+</tr>
+<td>Cultural Events</td>
+<td>
+<input type="checkbox" name="cul" value="solodance" class="checkbox">Solo-Dance<br>
+<input type="checkbox" name="cul" value="MelodyChain" class="checkbox">Melody Chain<br>
+<input type="checkbox" name="cul" value="Artistry" class="checkbox">Artistry<br>
+</td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td><textarea name="address" placeholder"Enter your address"></textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center;">
+<input type="submit" value="Register">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
