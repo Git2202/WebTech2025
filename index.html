@@ -2,51 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Resume</title>
+    <title>Online Registration Form</title>
+
     <link rel="stylesheet" href="style.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </head>
+
 <body>
 
 <header>
-    <h1>My Resume</h1>
-    <nav>
-        <a href="index.html">Resume</a>
-        <a href="biodata.html">Bio-Data</a>
-    </nav>
+    <h1>Online Application / Registration Form</h1>
 </header>
 
-<section class="container fade">
-    <img src="images/profile.jpg" class="profile" alt="Profile Photo">
+<div class="form-container">
+    <form action="submit.php" method="POST" id="regForm">
 
-    <h2>Personal Information</h2>
-    <p><strong>Name:</strong> Isra Irshad</p>
-    <p><strong>Email:</strong> isra.23cs049@sode-edu.in</p>
-    <p><strong>Phone:</strong> +91 98765 88888</p>
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required>
 
-    <h2>Education</h2>
-    <ul>
-        <li>B.Tech in Computer Science – SMVITM(2027)</li>
-        <li>Higher Secondary – SFX School (2020)</li>
-    </ul>
+        <label>Email:</label>
+        <input type="email" name="email" required>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>PHP, MySQL</li>
-        <li>Python, C++</li>
-    </ul>
+        <label>Phone Number:</label>
+        <input type="tel" name="phone" pattern="[0-9]{10}" required>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Online Voting System</li>
-        <li>Portfolio Website</li>
-    </ul>
-</section>
+        <label>Gender:</label>
+        <select name="gender" required>
+            <option value="">Select...</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label>Address:</label>
+        <textarea name="address" required></textarea>
+
+        <label>Course Applying For:</label>
+        <select name="course">
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>B.Tech</option>
+            <option>MCA</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
 
 <footer>
-    <p>© 2025 My Website</p>
+    <p>© 2025 Registration Portal</p>
 </footer>
+
 </body>
 </html>
